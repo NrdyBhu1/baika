@@ -9,6 +9,8 @@
 #define FONT "mononoki Nerd Font 15"
 #define DEFAULT_SHELL "/usr/bin/fish"
 #define STARTUP_DIR "/home/bhuvan"
+#define HORIZONTAL_PADDING 5
+#define VERTICAL_PADDING 5
 #define ALLOW_HYPERLINK TRUE
 #define CURSOR_BLINK VTE_CURSOR_BLINK_ON 
 #define CURSOR_SHAPE VTE_CURSOR_SHAPE_BLOCK 
