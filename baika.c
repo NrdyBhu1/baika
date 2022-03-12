@@ -119,6 +119,10 @@ main(int argc, char* argv[]) {
     // gtk_window_set_icon(GTK_WINDOW(window), icon);
     // gtk_window_set_icon_from_file(GTK_WINDOW(window), "baika.png", NULL);
     gtk_window_set_icon_name(GTK_WINDOW(window), "terminal");
+    gtk_widget_set_margin_top(terminal, VERTICAL_PADDING);
+    gtk_widget_set_margin_bottom(terminal, VERTICAL_PADDING);
+    gtk_widget_set_margin_start(terminal, HORIZONTAL_PADDING);
+    gtk_widget_set_margin_end(terminal, HORIZONTAL_PADDING);
     
     // start the shell
     gchar **shellcmd = (gchar *[]) { "/bin/sh", "-c", DEFAULT_SHELL, NULL };
