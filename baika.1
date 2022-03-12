@@ -1,0 +1,61 @@
+.TH Baika 1 March 2021 baika-0.0.1
+.SH Baika
+Baika \- A simple terminal emulator
+.SH DESCRIPTION
+A simple terminal emulator written in C using vte and gtk.
+.SH CONFIGURATION
+.PP
+Change configuration in
+\f[I]config.in.h\f[R].
+\" .SH PROPERTIES
+.IP \[br] 2
+\f[B]FONT\f[R] - set font name and size.
+.IP 
+Format: <font_name> <font_size>.
+.IP
+\f[B]Example\f[R]:
+#define FONT "Iosevka Term 12"
+.IP \[br] 2
+\f[B]DEFAULT_SHELL\f[R] - set default shell on startup.
+.IP 
+Format: /path/shell
+.IP
+\f[B]Example\f[R]:
+#define DEFAULT_SHELL "/usr/bin/sh"
+.IP \[br] 2
+\f[B]STARTUP_DIR\f[R] - set default dir on startup.
+.IP 
+Format: /home/user/path/
+.IP
+\f[B]Example\f[R]:
+#define STARTUP_DIR "/home/"
+.IP \[br] 2
+\f[B]ALLOW_HYPERLINK\f[R] - set allow hyperlink.
+.IP 
+Format: TRUE/FALSE
+.IP \[br] 2
+\f[B]MOUSE_AUTOHIDE\f[R] - set autohide mouse when typing.
+.IP 
+Format: TRUE/FALSE
+.IP \[br] 2
+\f[B]CURSOR_BLINK\f[R] - set cursor blink.
+.IP 
+Format: 
+.IP \[b] 1
+    VTE_CURSOR_BLINK_SYSTEM
+.IP \[b] 1
+    VTE_CURSOR_BLINK_ON
+.IP \[b] 1
+    VTE_CURSOR_BLINK_OFF
+.IP \[br] 2
+\f[B]CURSOR_SHAPE\f[R] - set cursor shape.
+.IP 
+Format: 
+.IP \[b] 1
+    VTE_CURSOR_SHAPE_BLOCK
+.IP \[b] 1
+    VTE_CURSOR_SHAPE_IBEAM
+.IP \[b] 1
+    VTE_CURSOR_SHAPE_UNDERLINE
+.SH AUTHORS
+NrdyBhu1
